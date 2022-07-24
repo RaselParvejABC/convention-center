@@ -1,4 +1,14 @@
-/* Fonts */
+/*--------------------------------------
+For Testing Purposes
+--------------------------------------*/
+
+.test-border {
+  border: 5px solid green;
+}
+
+/*--------------------------------------
+Fonts
+--------------------------------------*/
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
@@ -6,10 +16,47 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/*--------------------------------------
+Nav in Header 
+--------------------------------------*/
+
 header nav .navbar-brand {
   font-weight: bold;
 }
 
 header nav .nav-link {
   color: #3e3e3e;
+}
+
+/*--------------------------------------
+Carousel Section 
+--------------------------------------*/
+
+#caption-over-carousel {
+  width: 50%;
+  bottom: 10%;
+  z-index: 50;
+}
+
+.carousel-item img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #caption-over-carousel {
+    width: 90%;
+  }
+  #carouselExampleIndicators {
+    height: 700px;
+  }
+  .carousel-inner,
+  .carousel-item,
+  .carousel-item.active {
+    height: 100%;
+  }
+  .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 45% 50%;
+  }
 }
