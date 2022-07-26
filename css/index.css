@@ -34,11 +34,11 @@ Carousel Section
 
 #caption-over-carousel {
   width: 50%;
-  bottom: 10%;
+  bottom: 13%;
   z-index: 50;
 }
 
-.carousel-item img {
+#carouselExampleIndicators .carousel-item img {
   width: 100%;
 }
 
@@ -49,14 +49,27 @@ Carousel Section
   #carouselExampleIndicators {
     height: 700px;
   }
-  .carousel-inner,
-  .carousel-item,
-  .carousel-item.active {
+  #carouselExampleIndicators .carousel-inner,
+  #carouselExampleIndicators .carousel-item,
+  #carouselExampleIndicators .carousel-item.active {
     height: 100%;
   }
-  .carousel-item img {
+  #carouselExampleIndicators .carousel-item img {
     height: 100%;
     object-fit: cover;
     object-position: 45% 50%;
+  }
+}
+
+/*--------------------------------------
+Every Moment is Precious Section 
+--------------------------------------*/
+
+#every-moment-is-precious-section p {
+  color: #6c6c6c;
+}
+@media screen and (min-width: 768px) {
+  #every-moment-is-precious-section > div {
+    width: 50%;
   }
 }
