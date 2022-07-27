@@ -73,3 +73,13 @@ Every Moment is Precious Section
     width: 50%;
   }
 }
+
+/*--------------------------------------
+Our Packages Section 
+--------------------------------------*/
+#package-cards ul {
+  list-style-position: inside;
+}
+#package-cards ul li::marker {
+  content: "✓  ";
+}
